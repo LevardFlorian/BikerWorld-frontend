@@ -1,0 +1,49 @@
+@mixin applyGutter($size) {
+  // en fonction de la valeur de $size, on applique une marge différente
+  @if ($size == 'small') {
+      margin: 1rem;
+  }
+  @else if ($size == 'normal') {
+      margin: 2rem;
+  }
+  @else if ($size == 'large') {
+      margin: 3rem;
+  }
+  @else {
+      margin: 2rem;
+  }
+}
+
+// déclarer une mixin pour générer une média query qui prend en charge une largeur min variable => small, medium, large, extra-large par ex.
+// $size peut contenir ces chaînes : medium, large, extra-large
+@mixin breakpoint ($size) {
+
+    $breakpoint-min-width: 767px;
+
+    @if ($size == 'medium') {
+        $breakpoint-min-width: 768px;
+    }
+    @else if ($size == 'large') {
+        $breakpoint-min-width: 1024px;
+    }
+
+    // on fait dépendre la valeur de min-width de la valeur du paramètre $size
+    @media (min-width: $breakpoint-min-width) {
+        // sera "remplacé" par le contenu de la règle qui utilise la mixin
+        @content;
+    }
+}
+
+
+// facultatif : déclarer une mixin pour chaque breakpoint prévu (small, medium, large, extra-large)
+@mixin breakpoint-medium {
+    @include breakpoint ('medium') {
+        @content;
+    }
+}
+
+@mixin breakpoint-large {
+    @include breakpoint ('large') {
+        @content;
+    }
+}

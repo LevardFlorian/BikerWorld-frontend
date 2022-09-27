@@ -1,0 +1,29 @@
+.release__item {
+  margin: 1rem;
+  box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.2);
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__city {
+    font-size: 0.7rem;
+  }
+
+  a {
+    color: dimgray;
+  }
+
+}

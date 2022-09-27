@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.2);
+  position: sticky;
+  top: 0;
+  background-image: url(./assets/images/header-banner.webp);
+  background-size: cover;
+  background-position: top;
+
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__img {
+      width: 5rem;
+      padding: 0.5rem;
+
+    }
+
+    &__title {
+      font-size: 1rem;
+
+    }
+
+    &__menu {
+      text-align: end;
+      width: 3rem;
+
+      img {
+        width: 4rem;
+
+
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    &__title {
+      font-size: 1.2rem;
+    }
+
+  }
+
+  &__profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8rem;
+
+    &__img {
+      width: 3rem;
+      padding: 0.5rem;
+
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+}
