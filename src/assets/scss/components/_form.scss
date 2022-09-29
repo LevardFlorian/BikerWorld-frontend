@@ -1,0 +1,63 @@
+.form {
+  width: 90%;
+  margin: auto;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    background: linear-gradient(to left, #123456, #55ddff);
+
+    &__title {
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    &__label {
+      color: white;
+    }
+
+    &__radio {
+      color: white;
+    }
+    &__select {
+      width: 80%;
+    }
+    &__input {
+      width: 80%;
+    }
+    &__button {
+      width: 30%;
+      margin: 1rem;
+      img{
+        width: 40%;
+      }
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+}
+
+.div-file {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.np-image-preview {
+  display: flex;
+  justify-content: center;
+ img {
+   width: 90%;
+ }
+}

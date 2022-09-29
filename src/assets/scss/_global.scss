@@ -1,0 +1,40 @@
+html,
+
+body {
+  line-height: 1.4;
+  background: $background;
+}
+
+#app {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+button {
+  border-radius: 5px;
+  background: $background;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.alert,
+.error {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  background: linear-gradient(to right, #950d0d, #ff0000);;
+}
